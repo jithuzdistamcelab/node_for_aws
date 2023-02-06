@@ -5,21 +5,21 @@ Create an api in serverless
 
 instruction to install: 
 
-#### install package.json
+## install package.json
 npm init -y
 
-#### package-lock.json
+## package-lock.json
 
 npm install 
 
-#### Install severless offline
+## Install severless offline
 
 npm install serverless-offline --save-dev
 
-### add .. i serverless.yml
+## add .. i serverless.yml
 plugins:
         - serverless-offline
 
-### in package.json - scripts:
+## in package.json - scripts:
 
 "dev":"sls offline"
