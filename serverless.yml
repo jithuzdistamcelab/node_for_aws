@@ -1,0 +1,25 @@
+service: node-project-1
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-offline
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+           method: GET
+           path: /
+  api_new: 
+    handler: handler.new_api
+    events:
+      - http:
+          method: GET
+          path: /apiv1/
+
