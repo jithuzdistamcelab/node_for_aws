@@ -16,10 +16,12 @@ npm install
 
 npm install serverless-offline --save-dev
 
-## add .. i serverless.yml
+## add plugin in  serverless.yml
+
 plugins:
+
         - serverless-offline
 
-## in package.json - scripts:
+## on package.json in scripts add the line :
 
 "dev":"sls offline"
