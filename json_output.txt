@@ -1,0 +1,1 @@
+{"unique_id_number":"d90f77c0-a7a7-11ed-9923-f38b3d84f093","value_1":"1000","value_2":"200","operation_done":"addition","operation_value":"1000200"}

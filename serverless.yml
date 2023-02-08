@@ -1,5 +1,23 @@
-service: node-project-1
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
 
+service: node-api-task-1
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
 frameworkVersion: '3'
 
 provider:
@@ -10,16 +28,9 @@ plugins:
   - serverless-offline
 
 functions:
-  hello:
+  uuid:
     handler: handler.hello
     events:
       - http:
            method: GET
-           path: /
-  api_new: 
-    handler: handler.new_api
-    events:
-      - http:
-          method: GET
-          path: /apiv1/
-
+           path: /uuid/a/{a}/b/{b}
